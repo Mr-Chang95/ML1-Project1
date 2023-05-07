@@ -72,6 +72,11 @@ found something interesting.
 Important: Provide an interpretation for each chart. Explain for each attribute why the
 chosen visualization is appropriate.
 
+
+#### 1) Gender / Score Visualization 
+![image](https://user-images.githubusercontent.com/81498617/236693233-dbe3d76b-51b4-4f10-8667-682594d6723e.png)
+
+
 ####  - Explore relationships between attributes: Look at the attributes via scatter
 plots, correlation, cross-tabulation, group-wise averages, etc. as appropriate. Explain
 any interesting relationships.
