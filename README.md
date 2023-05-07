@@ -26,6 +26,8 @@ attribute in the data file.
 
   - Verify data quality: Explain any missing values, duplicate data, and outliers.
 Are those mistakes? How do you deal with these problems? 
+![image](https://user-images.githubusercontent.com/81498617/236689865-29a75e6d-7963-4f3c-8edd-1d0b8e1afb6c.png)
+
 
   - Give simple, appropriate statistics (range, mode, mean, median, variance,
 counts, etc.) for the most important attributes and describe what they mean or if you
