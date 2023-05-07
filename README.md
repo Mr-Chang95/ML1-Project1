@@ -21,18 +21,28 @@ good prediction algorithm?
 
 ### Data Understanding: 
 
-  - Describe the meaning and type of data (scale, values, etc.) for each
-attribute in the data file.
+  #### - Describe the meaning and type of data (scale, values, etc.) for each attribute in the data file.
 
-  - Verify data quality: Explain any missing values, duplicate data, and outliers.
-Are those mistakes? How do you deal with these problems? 
-![image](https://user-images.githubusercontent.com/81498617/236689865-29a75e6d-7963-4f3c-8edd-1d0b8e1afb6c.png)
+  #### - Verify data quality: Explain any missing values, duplicate data, and outliers. Are those mistakes? How do you deal with these problems? 
+    
+   - #### Missing Data
+
+![image](https://user-images.githubusercontent.com/81498617/236690315-b24002a3-f0cf-4720-9c64-5b150e81a92e.png)
+    
+   - Outliers
+
+![image](https://user-images.githubusercontent.com/81498617/236690257-6b577602-524c-4625-a772-f4a31339cd7d.png)
 
 
   - Give simple, appropriate statistics (range, mode, mean, median, variance,
 counts, etc.) for the most important attributes and describe what they mean or if you
-found something interesting. Note: You can also use data from other sources for
-comparison. Explain the significance of the statistics run and why they are meaningful.
+found something interesting.
+
+![image](https://user-images.githubusercontent.com/81498617/236691224-d1607ade-9cb7-46a3-bcce-81a0baaf7415.png)
+
+- Explain the significance of the statistics run and why they are meaningful.
+
+
 
   - Visualize the most important attributes appropriately (at least 5 attributes).
 Important: Provide an interpretation for each chart. Explain for each attribute why the
