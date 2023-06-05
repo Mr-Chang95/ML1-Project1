@@ -36,7 +36,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
-.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -57,6 +56,19 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .s1 { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Single */
 .highlight .ss { color: var(--jp-mirror-editor-string-color) } /* Literal.String.Symbol */
 .highlight .il { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Integer.Long */
+  </style>
+<style type="text/css">
+    /*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
+
   </style>
 
 
@@ -14582,10 +14594,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Educational-Mini-Project1"><center>Educational Mini-Project1</center><a class="anchor-link" href="#Educational-Mini-Project1">&#182;</a></h1><hr>
 
-<p><strong>Contributions</strong>:
-We used our cleaned up data and insights from the first project, which allowed for minimal hands on work in creating this mini-project.
-During class, Danny coded while Vo and Joey assited in piecing togther code snippets and ideas so that we could execute the models.
-Vo added Support Vector Continued, kde plots to the support Vector section along with explantion of the kde plots. Joey completed the Modeling write ups and support vector scatter plots, while Danny cleaned up code and added vector insights, as well as notebook aesthetics</p>
+<p><strong>Contributions</strong>:</p>
+<p>We used our cleaned up data and insights from the first project, which allowed for minimal hands on work in creating this mini-project.</p>
+<p>During class, Danny coded while Vo and Joey assited in piecing togther code snippets and ideas so that we could execute the models.</p>
+<p>To wrap up the project Vo added the Support Vector Continued section. Joey completed the Modeling write ups and support vector scatter plots, while Danny cleaned up code and added vector insights, as well as notebook aesthetics.</p>
+<p>Each person contributed to conclusion.</p>
 
 </div>
 </div>
@@ -15870,7 +15883,7 @@ class="
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 
 <span class="n">X</span> <span class="o">=</span> <span class="n">math_df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">"EthnicGroup"</span><span class="p">,</span> <span class="s2">"ParentEduc"</span><span class="p">,</span> <span class="s2">"ParentMaritalStatus"</span><span class="p">,</span> <span class="s2">"MathResult"</span><span class="p">,</span> <span class="s2">"HasSiblings"</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">math_df</span><span class="p">[[</span><span class="s2">"MathResult"</span><span class="p">]]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">math_df</span><span class="p">[</span><span class="s2">"MathResult"</span><span class="p">]</span>
 
 <span class="c1">#split the dataset into training (80%) and testing (20%) sets</span>
 <span class="n">X_train</span><span class="p">,</span><span class="n">X_test</span><span class="p">,</span><span class="n">y_train</span><span class="p">,</span><span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
@@ -15913,20 +15926,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>model run time 0.015025615692138672
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>C:\Users\Joey\anaconda3\envs\ML\lib\site-packages\sklearn\utils\validation.py:1143: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
-  y = column_or_1d(y, warn=True)
+<pre>model run time 0.015015840530395508
 </pre>
 </div>
 </div>
@@ -16239,23 +16239,10 @@ class="
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>C:\Users\Joey\anaconda3\envs\ML\lib\site-packages\sklearn\utils\validation.py:1143: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
-  y = column_or_1d(y, warn=True)
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>[[3096  366]
  [ 380 2287]]
-model run time: 27.26952862739563
+model run time: 26.529239654541016
 </pre>
 </div>
 </div>
